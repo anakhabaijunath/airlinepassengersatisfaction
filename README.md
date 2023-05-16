@@ -1,6 +1,3 @@
-# airlinepassengersatisfaction
-Checking the satisfaction of airline passengers
-
 library(ggplot2)
 library(lattice)
 library(caret)
@@ -318,5 +315,6 @@ pf[pfc,"Recall"] <- format(round(cm[["byClass"]][["Recall"]]*100, 2), nsmall = 2
 
 }
 cat("The best model is", best_model,"with Accuracy: ",best_accuracy)
+
 
 
